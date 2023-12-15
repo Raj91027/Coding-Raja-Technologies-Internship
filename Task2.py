@@ -72,12 +72,12 @@ def main():
             budget_tracker.add_transaction(transaction)
         elif choice == '3':
             remaining_budget = budget_tracker.calculate_budget()
-            print(f"Remaining Budget: ${remaining_budget:.2f}")
+            print(f"Remaining Budget: ₹{remaining_budget:.2f}")
         elif choice == '4':
             expense_categories = budget_tracker.categorize_expenses()
             print("Expense Analysis:")
             for category, amount in expense_categories.items():
-                print(f"{category}: ${amount:.2f}")
+                print(f"{category}: ₹{amount:.2f}")
         elif choice == '5':
             break
         else:
